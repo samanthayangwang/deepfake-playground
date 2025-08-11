@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Information</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<section id="information">
+
+    <header>
+        <div id="headerText">LEARN MORE ABOUT DEEPFAKES</div>
+    </header>
+
+    <section class="introduction">
+        <div id="definitionText">
+            Deepfakes are synthetic images, videos, or audios altering one’s face or body so that they appear to be doing, saying, or posing in false ways.
+        </div>
+        <img id="crouchWoman" src="IMG/Womens_Back_CMYK.png" alt="Pixelated image of woman crouching">
+    </section>
+
+    <section class="stats-section">
+        <div class="stat-block">
+          <div id="percentage">98%</div>
+          <div id="stat-text">OF ALL DEEPFAKES ARE PORNOGRAPHIC</div>
+        </div>
+        <div class="stat-block">
+          <div id="percentage">99%</div>
+          <div id="stat-text">OF PORNOGRAPHIC DEEPFAKES FEATURE WOMAN AS THE SUBJECT</div>
+        </div>
+    </section>
+
+    <section class="aiTech">
+        <div id="techHeader">THE TECHNOLOGY BEHIND THEM</div>
+            <div class="cardContainer">
+                <div class="infoCard">
+                    <div id="techName">Generative Adversarial Networks (GANs)</div>
+                    <p id="techDef">
+                        GANs are a class of machine learning frameworks composed of two neural networks: the generator and the discriminator. The generator creates fake images, while the discriminator attempts to distinguish between real and fake images. The two networks are trained together, with the generator improving its ability to create convincing fakes as the discriminator gets better at detecting them.
+                        
+                        GANs are often employed in generating realistic faces, voices, and even entire video clips. They are one of the most common methods used for creating high-quality deepfakes because of their ability to generate lifelike details, such as facial expressions, skin tone, and lighting
+                    </p>
+                </div>
+                <div class="infoCard">
+                    <div id="techName">Autoencoders</div>
+                    <p id="techDef">
+                        Autoencoders are neural networks that learn to encode an input (e.g., a face) into a compressed representation, and then decode it back to the original format. In the case of deepfakes, an autoencoder is trained on a person's face to learn its features, and then the model can map these features onto another person's face.
+    
+                        In deepfake applications, autoencoders are typically used to swap faces in videos. They first encode the face of a target person, then swap it with another person’s face in the video, creating a convincing deepfake.
+                    </p>
+                </div>
+                <div class="infoCard">
+                    <div id="techName">Recurrent Neural Networks (RNNs)</div>
+                    <p id="techDef">
+                        RNNs are specialized for working with sequences of data, such as video frames or audio. Unlike regular feedforward neural networks, RNNs can maintain a "memory" of previous frames or sounds, making them well-suited for tasks like voice synthesis and lip-syncing in deepfake videos.
+    
+                        RNNs are typically used in conjunction with other models like GANs or autoencoders to synchronize facial movements or voices in deepfake videos. This helps maintain consistency in the video’s sequence, such as ensuring that the lip movements match the audio and facial expressions match the emotions being conveyed.
+                    </p>
+                </div>    
+            </div>
+        <a href="home.html">
+            <button id="restartExpButton">RESTART EXPERIENCE</button>    
+        </a>
+    </section>
+
+
+  <script src="script.js"></script>
+</section>
+</body>
+</html>

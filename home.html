@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Discriminator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<section id="discriminator">
+  <div id="overlayText">WHICH IS REAL?</div>
+  
+  <div id="quiz">
+    <div class="image-container" id="leftImageContainer">
+      <img id="leftImage" src="" alt="Left">
+      <div class="hover-overlay"></div>
+    </div>
+    <div class="image-container" id="rightImageContainer">
+      <img id="rightImage" src="" alt="Right">
+      <div class="hover-overlay"></div>
+    </div>
+  </div>
+
+  <div id="result" style="display: none;">
+    <button id="restartButton">RESTART</button>
+
+    <div id="resultContent">
+      <h1 id="resultText"></h1>
+      <button id="continueButton">CONTINUE</button>
+    </div>
+  </div> 
+
+  <script src="script.js"></script>
+</section>
+</body>
+</html>
